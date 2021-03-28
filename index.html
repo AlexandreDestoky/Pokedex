@@ -7,17 +7,25 @@
     <title>Pokedex</title>
   </head>
   <body>
-    <h1>Bienvenue dans le pokedex !</h1>
+    <h1>Bienvenue dans le Pokedex !</h1>
 
-    <form class="recherche-pokemon">
-      <label for="recherhe">Chercher un Pokemon</label>
+    <form class="recherche-poke">
+      <label for="recherche">Chercher un pokémon</label>
       <input type="text" id="recherche" />
-      <button type="submit">Rechercher</button>
+      <!-- <button type="submit">Rechercher</button> -->
+
+      <!-- Loader -->
+      <div class="loader">
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+      </div>
     </form>
 
     <div class="container">
-      <ul class="liste-pokemon"></ul>
+      <ul class="liste-poke"></ul>
     </div>
+
     <script src="app.js"></script>
   </body>
 </html>
