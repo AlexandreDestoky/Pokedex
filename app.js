@@ -9,3 +9,14 @@ searchInput.addEventListener("input", function (e) {
     e.target.parentNode.classList.remove("active-input");
   }
 });
+
+
+function fetchTest() {
+  fetch("https://pokeapi.co/api/v2/pokemon?limit=151")
+  .then(reponse => reponse.json())
+  .then((allPokemon) => {
+    console.log(allPokemon);
+  })
+}
+
+fetchTest();
