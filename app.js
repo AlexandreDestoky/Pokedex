@@ -48,7 +48,11 @@ function fetchPokemonComplet(pokemon) {
           allPokemon.push(objPokemonFull);
 
           if (allPokemon.length === 151) {
-            console.log(allPokemon);
+            // console.log(allPokemon);
+
+            tableauFin = allPokemon.sort((a,b) => {
+              return a.id - b.id;
+          }).slice(0,21);
           }
         });
     });
